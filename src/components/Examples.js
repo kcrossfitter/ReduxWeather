@@ -3,8 +3,11 @@ import React from 'react';
 const Examples = () => (
   <div>
     <h3>
-      Examples Component
+      Examples
     </h3>
+    <p>
+      Welcome to examples page!
+    </p>
   </div>
 );
 
