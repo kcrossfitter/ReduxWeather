@@ -34,7 +34,9 @@ const About = () => (
 );
 
 const headingStyle = {
-  textAlign: 'center'
+  textAlign: 'center',
+  marginTop: '2.5rem',
+  marginBottom: '2.5rem'
 };
 
 export default About;

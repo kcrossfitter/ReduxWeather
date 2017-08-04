@@ -13,7 +13,11 @@ export const getWeather = (location) => {
 
         dispatch({
           type: LOAD_WEATHER,
-          isLoading: false
+          isLoading: false,
+          error: '',
+          extraMessage: '',
+          temp: '',
+          cityName: ''
         });
 
         if (weather.cod && weather.message) {
@@ -59,6 +63,10 @@ export const getWeather = (location) => {
 export const loadWeather = () => {
   return {
     type: LOAD_WEATHER,
-    isLoading: true
+    isLoading: true,
+    error: '',
+    extraMessage: '',
+    temp: '',
+    cityName: ''
   };
 };

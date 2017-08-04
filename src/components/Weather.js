@@ -5,7 +5,7 @@ import WeatherMessage from './WeatherMessage';
 
 const Weather = () => (
   <div>
-    <h2 style={title}>
+    <h2 style={headingStyle}>
       Get Weather
     </h2>
     <WeatherForm />
@@ -14,9 +14,10 @@ const Weather = () => (
 );
 
 
-const title = {
+const headingStyle = {
   textAlign: 'center',
-  marginBottom: '2rem'
+  marginTop: '2.5rem',
+  marginBottom: '2.5rem'
 };
 
 export default Weather;

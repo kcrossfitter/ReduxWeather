@@ -84,8 +84,8 @@ class Nav extends React.Component {
           >
             <input
               className="form-control mr-sm-2"
-              type="text"
-              placeholder="Search weather"
+              type="search"
+              placeholder="Search weather by city"
               ref={(location) => this.location = location}
             />
             <button

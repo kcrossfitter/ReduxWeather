@@ -23,20 +23,22 @@ class WeatherForm extends Component {
       <form onSubmit={this.handleSubmit.bind(this)}>
 
         <div className="row">
-          <div className="form-group offset-4 col-4">
+          <div className="form-group offset-3 col-6">
             <input
               className="form-control"
-              type="text"
-              placeholder="Enter city name"
+              type="search"
+              placeholder="Search weather by city"
               ref={(location) => this.location = location}
             />
           </div>
         </div>
         <div className="row">
-          <div className="form-group offset-4 col-4">
+          <div className="form-group offset-3 col-6">
             <button
               type="submit"
               className="btn btn-outline-info btn-block"
+              data-toggle="modal"
+              data-target="#errorModal"
             >
               Get Weather
             </button>

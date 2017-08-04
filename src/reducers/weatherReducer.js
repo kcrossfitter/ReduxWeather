@@ -13,7 +13,10 @@ export default (state = initialState, action) => {
     case LOAD_WEATHER:
       return {
         ...state,
-        isLoading: action.isLoading
+        isLoading: action.isLoading,
+        error: '',
+        extraMessage: '',
+        temp: ''
       };
 
     case GET_WEATHER:

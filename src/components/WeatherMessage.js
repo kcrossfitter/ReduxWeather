@@ -1,6 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
+
 import loadingImg from './loading.gif';
+import ErrorModal from './ErrorModal';
 
 const WeatherMessage = (props) => {
   const {
@@ -23,14 +25,22 @@ const WeatherMessage = (props) => {
     );
   }
 
-  if (error) {
-    return (
-      <div style={msgStyle}>
-        <p className="lead">
-          {error}!
-        </p>
-      </div>
-    );
+  /**
+   * This is for a version without modal
+   */
+  // if (error) {
+  //   return (
+  //     <div style={msgStyle}>
+  //       <p className="lead">
+  //         {error}!
+  //       </p>
+  //     </div>
+  //   );
+  // }
+
+
+  if (error.length > 0) {
+    return <ErrorModal title="Oops~ Error!!" error={error} />
   }
 
   if (temp && cityName) {
