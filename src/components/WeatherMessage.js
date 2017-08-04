@@ -44,7 +44,7 @@ const WeatherMessage = (props) => {
   }
 
   if (temp && cityName) {
-    console.log('extraMessage', extraMessage);
+    
     if (!extraMessage) {
       return (
         <div style={msgStyle}>

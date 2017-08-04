@@ -44,7 +44,8 @@ const Examples = () => (
 const headingStyle = {
   textAlign: 'center',
   marginTop: '2.5rem',
-  marginBottom: '2.5rem'
+  marginBottom: '2.5rem',
+  color: '#555'
 };
 
 export default Examples;

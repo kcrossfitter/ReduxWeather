@@ -17,8 +17,9 @@ class Nav extends React.Component {
     this.location.value = '';
 
     if (location.length > 0) {
-      this.props.loadWeather();
-      this.props.getWeather(location);
+      // this.props.loadWeather();
+      // this.props.getWeather(location);
+      this.props.history.push(`/?location=${location}`)
     }
   }
 
